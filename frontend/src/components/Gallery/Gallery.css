@@ -1,0 +1,82 @@
+/* src/components/Gallery.css */
+.slider-container {
+  max-width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 550px;
+  background-color:#063f9a;
+  color: white;
+  border-radius: 10px;
+}
+h1{
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+.caption{
+  text-align: center;
+  color: bisque;
+}
+.slick-slide {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  padding: 0 3px; /* Add padding to maintain gap between images */
+  /* Ensure padding is included in the width and height calculations */
+}
+
+.slick-slide img {
+  max-width: auto;
+  max-height: 400px; /* Ensure the image doesn't exceed its container */
+  border-radius: 10px;
+}
+
+
+.slick-prev, .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional background for better visibility */
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: 0px;
+}
+
+.slick-next {
+  right: 0px;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li button:before {
+  color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff;
+}
+
+.custom-arrow {
+  position: absolute;
+}
+
+.custom-arrow.next-arrow {
+  right: -20px; /* Adjust as needed */
+}
+
+.custom-arrow.prev-arrow {
+  left: -20px; /* Adjust as needed */
+}

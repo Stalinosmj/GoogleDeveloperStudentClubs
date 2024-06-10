@@ -1,0 +1,117 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 70%;
+    margin: 0 auto; 
+    border-radius: 2%;
+    color:black;
+}
+
+
+.title {
+    font-size: 63px;
+    font-weight: 550;
+    text-align: center;
+    margin: 0;
+    color: black
+}
+.about2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.about2 img {
+    width: 50%; /* Ensure image takes up 50% of the container */
+    height: auto; /* Maintain aspect ratio */
+    flex: 0 0 50%; /* Prevent shrinking below 50% */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.about-text {
+    font-size: 30px;
+    width: 50%; /* Ensure text takes up 50% of the container */
+    max-width: 100%; /* Ensure text doesn't overflow */
+    text-align: center;
+    line-height: 1.5;
+    flex: 0 0 50%; /* Prevent shrinking below 50% */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+@media (max-width: 768px) {
+    .about2 {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        align-items: center; /* Center-align the elements */
+    }
+
+    .about2 img,
+    .about-text {
+        width: 100%; /* Adjust width for smaller screens */
+        margin: 10px 0; /* Add vertical spacing */
+    }
+
+}
+.line{
+    height: 3px;
+    width: 50%;
+    background-color: black;
+    margin-top: 30px;
+   margin-bottom: 30px;
+}
+/* Media Queries for Responsiveness */
+
+/* Larger screens */
+@media (min-width: 1200px) {
+    .title {
+        font-size: 3rem; /* Larger font for big screens */
+    }
+    .about-text {
+        font-size: 1.5rem; /* Slightly larger text for better readability */
+    }
+}
+
+/* Medium screens */
+@media (max-width: 1199px) {
+    .title {
+        font-size: 4rem; /* Adjust font size */
+    }
+    .about-text {
+        font-size: 1.75rem; /* Adjust font size */
+    }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+    .about {
+        height: auto; /* Allow auto height for small screens */
+        padding: 15px; /* Reduce padding */
+    }
+    .title {
+        font-size: 3rem; /* Smaller font size */
+    }
+    .about-text {
+        font-size: 1.5rem; /* Smaller text */
+        max-width: 80%; /* Allow more width on small screens */
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.5rem; /* Further reduce font size */
+    }
+    .about-text {
+        font-size: 1.25rem; /* Smaller text */
+        max-width: 90%; /* Almost full width */
+    }
+}

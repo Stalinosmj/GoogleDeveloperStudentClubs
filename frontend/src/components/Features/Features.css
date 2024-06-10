@@ -1,0 +1,120 @@
+.features {
+    background-color: black;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+.feature-item {
+    width: 100%;
+    background-color: initial;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; /* Smooth transition for layout change */
+}
+
+/* Reverse direction for every second item */
+.feature-item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.feature-item:nth-child(2n) .feature-item-left {
+    padding-left: 0;
+    padding-right: 10vw; /* Adjust right padding for reversed items */
+}
+
+.feature-item-left, .feature-item-right {
+    flex: 1 1 47.5%; /* Allow elements to flex and adapt to available space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    /*background-color: rgba(66, 134, 244, 0.238);  Use initial for right side if needed */
+    transition: flex-basis 0.3s ease-in-out; /* Smooth transition for layout change */
+    
+}
+
+.feature-item-right {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    /*background-color: initial;  Reset background color for right section */
+}
+
+.feature-item-image {
+    width: 52.5%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-item-image img {
+    height: 90%;
+    width: auto;
+}
+
+.text {
+    max-width: 50%;
+    max-height: 80%;
+    min-height: 200px;
+    text-align: center; /* Center align text for better layout */
+    line-height: 1.6; /* Improve readability */
+    padding: 30px;
+}
+.text h1{
+    font-size: 55px;
+    position: relative;
+}
+.text p{
+    font-size: 20px;
+}
+.feature-0, .feature-1, .feature-2 {
+    animation: float 5s ease-in-out infinite;
+    width: 75%;
+    margin: auto; /* Auto margins to center content */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Keyframe animations */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes float3 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}.blob {
+  width: 200px;
+  height: 200px;
+  background-color:#F4B400;/* Change color here */
+  border-radius: 43% 57% 63% 37% / 42% 36% 64% 58%;
+  position: absolute;
+  animation: blob 5s infinite;
+  left: 0;
+}
+
+@keyframes blob {
+  0%, 100% {
+    border-radius: 43% 57% 63% 37% / 42% 36% 64% 58%;
+  }
+  50% {
+    border-radius: 63% 37% 43% 57% / 64% 58% 42% 36%;
+  }
+}

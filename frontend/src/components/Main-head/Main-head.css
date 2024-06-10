@@ -1,0 +1,161 @@
+
+.main-header {
+    
+    padding-top: 40%;
+    color: #fff;
+    overflow: hidden;
+    min-height: 100vh;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in width */
+    padding: 20px;
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    flex-direction: column; /* Stack titles vertically */
+    
+}
+
+/* Title and Subtitle Styling */
+.main_header_title,
+.main_header_subtitle {
+    color: #4e4e4e;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative; /* Adjust to ensure proper positioning */
+    z-index: 1;
+}
+
+.main_header_title {
+    font-size: 4em; /* Adjust font size */
+    text-align: left;
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.main_header_subtitle {
+    font-size: 1.5em; /* Adjust font size */
+    margin-top: 10px; /* Adjust spacing */
+}
+
+/* Shape Styling */
+.shape {
+    position: absolute;
+    transition: .5s ease-out;
+    overflow: hidden;
+}
+
+/* Circle Styles */
+.circle1, .circle2 {
+    border-radius: 50%;
+}
+
+.circle1 {
+    height: 170px;
+    width: 170px;
+    left: -5%;
+    top: 55%;
+    background: #ea4335;
+    animation: shape-swing 4s infinite;
+}
+
+.circle2 {
+    height: 170px;
+    width: 170px;
+    right: -5%;
+    top: 15%;
+    background: #F4B400;
+    animation: shape-swing 4s infinite;
+}
+
+/* Rectangle Styles */
+.rectangle1, .rectangle2 {
+}
+
+.rectangle1 {
+    height: 140px;
+    width: 140px;
+    right: 10%;
+    top: 40%;
+    background: #34A853;
+    animation: shape-rotate 5s infinite;
+}
+
+.rectangle2 {
+    height: 140px;
+    width: 140px;
+    left: 10%;
+    bottom: 40%;
+    background:  #4285F4;
+    animation: shape-rotate 5s infinite;
+}
+
+/* Triangle Styles */
+.triangle1, .triangle2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.triangle1 {
+    border-width: 86.6px 70px 0 70px;
+    border-color: #F4B400 transparent transparent transparent;
+    left: 10%;
+    top: 70%;
+    animation: shape-swing 6s infinite;
+}
+
+.triangle2 {
+    border-width: 86.6px 70px 0 70px;
+    border-color: #ea4335 transparent transparent transparent;
+    right: 10%;
+    bottom: 70%;
+    animation: shape-swing 6s infinite;
+}
+
+/* Animations */
+@keyframes shape-swing {
+    0% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes shape-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shape-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes shape-scale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes shape-fade {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
