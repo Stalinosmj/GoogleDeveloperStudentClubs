@@ -7,25 +7,47 @@ const Card = ({ children, className }) => (
   <div className={`card ${className}`}>{children}</div>
 );
 
-const GDSC = () => (
-  <div className="card-grid">
-    <Card className="large blue">Google Developer Students Club</Card>
-    <Card className="small yellow">Creativity</Card>
-    <Card className="small green">
-      <img src={assets.git} alt="Profile" />
-    </Card>
-    <Card className="small blue">Ambition</Card>
-    <Card className="small red">
-      <code>&lt;/&gt;</code>
-    </Card>
-    <Card className="small yellow">
-      <img src={assets.core_team1} alt="Books" />
-    </Card>
-    <Card className="small green">Empower</Card>
-    <Card className="small blue">
-      <img src="path/to/mic-icon.png" alt="Mic" />
-    </Card>
-  </div>
+const GDSC = () => (<div className="container">
+  
+    <div className="card-grid">
+      <Card className="large blue">Google Developer Students Club</Card>
+  
+      <Card className="small ">
+        <img src={assets.nova} alt="Profile" />
+      </Card>
+      <h1
+        className="card"
+        style={{ color: "rgba(0, 0, 0, 0.599)", fontSize: "45px" }}
+      >
+        <br />
+        Collaborate
+      </h1>
+      <Card className="small green">Connect</Card>
+      <h1
+        className="card"
+        style={{ color: "rgba(0, 0, 0, 0.599)", fontSize: "45px" }}
+      >
+        Leverage <br />
+        Your Ideas
+      </h1>
+      <Card className="small green">
+        <img src={assets.teamwork2} alt="Books" />
+      </Card>
+      <Card className="small yellow">
+        <code>&lt;/&gt;</code>
+      </Card>
+      <Card className="small ">
+        <img src={assets.zlat} alt="Books" />
+      </Card>
+      <Card className="small red">Empower</Card>
+      <Card className="small">
+        <img src={assets.flutter1} alt="Mic" />
+      </Card>
+      <Card className="small blue">
+        <img src={assets.teamwork} alt="Mic" />
+      </Card>
+    </div>
+</div>
 );
 
 export default GDSC;

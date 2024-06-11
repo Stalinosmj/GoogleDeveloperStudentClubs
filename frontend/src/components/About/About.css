@@ -9,7 +9,7 @@
     max-width: 70%;
     margin: 0 auto; 
     border-radius: 2%;
-    color:black;
+    color:rgb(244, 235, 235);
 }
 
 
@@ -18,7 +18,7 @@
     font-weight: 550;
     text-align: center;
     margin: 0;
-    color: black
+    color: rgb(174, 169, 10)
 }
 .about2 {
     display: flex;
@@ -64,7 +64,7 @@
 .line{
     height: 3px;
     width: 50%;
-    background-color: black;
+    background-color: rgb(174, 169, 10);
     margin-top: 30px;
    margin-bottom: 30px;
 }

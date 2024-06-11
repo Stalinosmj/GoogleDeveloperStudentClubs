@@ -1,14 +1,22 @@
+.container{
+  background-color: black;
+  width: 100%;
+}
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Adjusted column width */
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px; /* Increased gap between cards */
-  width: 90%; /* Reduced the width */
-  max-width: 1200px; /* Added max-width for responsiveness */
+  grid-template-columns: repeat(4, 3fr); /* 4 columns with equal width */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows with equal height */
+  gap: 10px;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background-color: black;
 }
 
+.yu{
+  color: rgba(0, 0, 0, 0.597);
+}
 .card {
   display: flex;
   justify-content: center;
@@ -26,7 +34,7 @@
 
 .large {
   grid-column: span 1;
-  grid-row: span 2;
+  grid-row: span 1;
 }
 
 .small {
@@ -52,14 +60,16 @@
 }
 
 img {
-  max-width: 100%; /* Adjusted image size */
-  max-height: 100%; /* Adjusted image size */
-  height: auto;
-  width: auto;
+  width: auto; /* Adjusted image size */
+  height: 100%; /* Adjusted image size */
+  
 }
+
 
 .card-text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-align: center; /* Center text horizontally */
+  width: 100%; /* Ensure text is fully centered */
 }

@@ -1,6 +1,5 @@
 
 .main-header {
-    
     padding-top: 40%;
     color: #fff;
     overflow: hidden;
@@ -18,7 +17,7 @@
 /* Title and Subtitle Styling */
 .main_header_title,
 .main_header_subtitle {
-    color: #4e4e4e;
+    color:white;
     font-weight: 600;
     text-transform: capitalize;
     position: relative; /* Adjust to ensure proper positioning */
