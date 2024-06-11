@@ -5,7 +5,7 @@
 /* Container with slanting background */
 .custom-container {
   position: relative;
-  background:rgb(200, 199, 226);
+  background: white;
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
   padding: 50px 20px;
   width: 100%;}
