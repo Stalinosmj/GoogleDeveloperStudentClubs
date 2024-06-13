@@ -9,8 +9,8 @@ const Navbar = () => {
         <img src={assets.gdsclogo}alt="Logo" />
       </div>
       <div className="navbar-links">
-        <a href="index.html">Home</a>
-        <a href="Teampage.html">Team</a>
+        <a href="">Home</a>
+        <a href="">Team</a>
         <a href="#">Events</a>
         <a href="https://developers.google.com/community/gdsc">About-GDSC</a>
       </div>

@@ -34,11 +34,12 @@
   justify-content: flex-end;
   flex-wrap: nowrap;
 }
-.navbar-links a {
+.navbar-links a{
   font-size: medium;
   margin-left: 15px;
   margin-top: 20px;
-  color: #333;
+  color: white;
+  cursor: pointer;
   /* border-bottom: 2px solid #34a853; */
 }
 .navbar-links a:hover {

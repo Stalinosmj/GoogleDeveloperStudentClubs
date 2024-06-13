@@ -5,7 +5,7 @@
 /* Container with slanting background */
 .custom-container {
   position: relative;
-  background: white;
+  background: rgba(255, 255, 255, 0.562);
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
   padding: 50px 20px;
   width: 100%;}
@@ -24,7 +24,7 @@
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px;
+  width: 250px;
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
