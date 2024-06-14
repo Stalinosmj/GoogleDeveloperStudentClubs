@@ -18,7 +18,7 @@ const Domains = () => {
 
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>we work on</h1>
+      <h1 style={{ textAlign: "center", color:"red" }}>We Specialize On</h1>
       <div className="custom-container">
         <div className="custom-card-grid">
           {cards.map((card, index) => (
